@@ -168,6 +168,9 @@ class _RelatedFieldsState extends State<FormD> {
                 FormBuilderFilterChip<String>(//este es un filterchip en el que escoges alguna de las opciones que te ofrecen.
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   backgroundColor: Colors.blue,
+                  spacing: 10,
+                  alignment: WrapAlignment.center,
+                  runSpacing: 10,
                   decoration: const InputDecoration(
                     labelText: 'Input Chips (Filter Chips)',
                     border: OutlineInputBorder(
