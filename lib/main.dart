@@ -167,6 +167,7 @@ class _RelatedFieldsState extends State<FormD> {
                 const SizedBox(height: 20),
                 FormBuilderFilterChip<String>(//este es un filterchip en el que escoges alguna de las opciones que te ofrecen.
                   autovalidateMode: AutovalidateMode.onUserInteraction,
+                  backgroundColor: Colors.blue,
                   decoration: const InputDecoration(
                     labelText: 'Input Chips (Filter Chips)',
                     border: OutlineInputBorder(
@@ -179,53 +180,29 @@ class _RelatedFieldsState extends State<FormD> {
                   name: 'languages_filter',
                   selectedColor: Colors.grey,
                   options: const [
-                    FormBuilderChipOption(
+                    FormBuilderChipOption(//primera opcion
                       value: 'HTML',
-                      avatar: SizedBox.shrink(), 
-                      child: Chip(
-                        label: Text('HTML'),
-                        backgroundColor: Colors.blue,                            
-                      ),                     
+                      avatar: SizedBox.shrink(),                    
                     ),
-                    FormBuilderChipOption(
+                    FormBuilderChipOption(//segunda opcion
                       value: 'CSS',
                       avatar: SizedBox.shrink(), 
-                      child: Chip(
-                        label: Text('CSS'),
-                        backgroundColor: Colors.blue,                            
-                      ),
                     ),
-                    FormBuilderChipOption(
+                    FormBuilderChipOption(//tercera opcion
                       value: 'Java',
                       avatar: SizedBox.shrink(), 
-                      child: Chip(
-                        label: Text('Java'),
-                        backgroundColor: Colors.blue,                            
-                      ),
                     ),
-                    FormBuilderChipOption(
+                    FormBuilderChipOption(//cuarte opcion
                       value: 'Dart',
-                      avatar: SizedBox.shrink(), 
-                      child: Chip(
-                        label: Text('Dart'),
-                        backgroundColor: Colors.blue,                            
-                      ),
+                      avatar: SizedBox.shrink(),
                     ),
-                    FormBuilderChipOption(
+                    FormBuilderChipOption(//quinta opcion
                       value: 'TypeScript',
                       avatar: SizedBox.shrink(), 
-                      child: Chip(
-                        label: Text('TypeScript'),
-                        backgroundColor: Colors.blue,                            
-                      ),
                     ),
-                    FormBuilderChipOption(
+                    FormBuilderChipOption(//sexta opcion
                       value: 'Angular',
                       avatar: SizedBox.shrink(), 
-                      child: Chip(
-                        label: Text('Angular'),
-                        backgroundColor: Colors.blue,                            
-                      ),
                     ),
                   ],
                   onChanged: _onChanged,
